@@ -1,0 +1,25 @@
+{
+  "name": "react-flux-starter",
+  "version": "1.0.0",
+  "description": "A React Flux Starter",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stanley Hwang",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-sass": "^2.0.1",
+    "object-assign": "^2.0.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "flux": "^2.0.3",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3"
+  }
+}

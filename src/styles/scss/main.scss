@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/************   VARS   ************/
+
+$main-font: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-color: #464646;
+$side-padding: 7%;
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+/************  MAIN  *************/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  color: $font-color;
+  font-family: $main-font;
+  font-weight: 400;
+  background-color: #fff;
+}
+#app {
+  height: 100%;
+  .site_wrap {
+    height: 100%;
+  }
+  .main_wrap {
+    min-height: 100%;
+    margin: 0 auto -120px;
+    &:after {
+      content: "";
+      display: block;
+      height: 170px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $font-color;
+    &:hover {
+      color: #9f7355;
+    }
+  }
+}
+
+
+
+/************  HEADER  *************/
+
+header {
+  background-color: #f4f4f4;
+  height: 70px;
+  padding: 0 $side-padding;
+  
+  nav {
+    @include vertical-align;
+    ul {
+      margin-left: -15px;
+      overflow: hidden;
+      li {
+        float: left;
+      }
+    }
+    a {
+      display: block;
+      padding: 10px 15px;
+    }
+  }
+}
+
+
+
+/************  MAIN SECTION  *************/
+
+.main_section {
+  padding: 0 $side-padding;
+  .page_title {
+    text-align: center;
+  }
+  .main_copy {
+    margin: 80px 0 30px;
+  }
+}
+
+
+
+/************  PAGES  *************/
+
+.page_component {
+  padding-top: 30px;
+  &.home_page {
+    ul {
+      li {
+        a {
+          padding: 8px 0;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+
+
+/************  FOOTER  *************/
+
+/* Sticky footer */
+footer {
+  background-color: #f4f4f4;
+  position: relative;
+  height: 120px;
+  padding: 30px $side-padding 0;
+  width: 100%;
+  p {
+    font-size: 14px;
+    margin: 0 auto;
+    float: left;
+    margin-right: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+
+

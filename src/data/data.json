@@ -1,0 +1,49 @@
+{
+  "dataObj" : {
+    "header": {
+      "title": "Header Section"
+    },
+    "homePage": {
+      "title": "Home",
+      "mainCopy": "A minimal React/Flux starter app that uses:",
+      "technologies": [
+      {
+        "name": "React",
+        "url": "https://facebook.github.io/react",
+        "info": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+      },
+      {
+        "name": "Flux",
+        "url": "http://facebook.github.io/flux",
+        "info": "An application architecture for React utilizing a unidirectional data flow."
+      },
+      {
+        "name": "React Router",
+        "url": "http://rackt.github.io/react-router",
+        "info": "A complete routing library for React."
+      },
+      {
+        "name": "Browserify",
+        "url": "http://browserify.org/",
+        "info": "Lets you require('modules') in the browser by bundling up all of your dependencies."
+      },
+      {
+        "name": "Gulp",
+        "url": "http://gulpjs.com/",
+        "info": "The streaming build system."
+      },
+      {
+        "name": "SASS",
+        "url": "http://sass-lang.com/",
+        "info": "Syntactically Awesome Stylesheets"
+      }
+    ]},
+    "aboutPage": {
+      "title": "About",
+      "mainCopy": "Just another page to demonstrate routing."
+    },
+    "footer": {
+      "title": "Footer Section"
+    }
+  }
+}
